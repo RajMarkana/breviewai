@@ -182,12 +182,12 @@ export default function Home() {
         {/* ── Hero ─────────────────────────────────────────────────────── */}
         <section className="mx-auto max-w-6xl px-4 py-20 sm:py-28">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+            <span className="inline-flex items-center rounded-full border border-rose-200 bg-rose-50 px-3 py-1 text-xs font-medium text-rose-700">
               AI-Powered Google Review Generation
             </span>
             <h1 className="mt-5 text-4xl sm:text-6xl font-bold tracking-tight text-zinc-900 leading-tight">
               Turn happy customers into{" "}
-              <span className="text-blue-600">5-star Google reviews</span>.
+              <span className="text-rose-600">5-star Google reviews</span>.
             </h1>
             <p className="mt-5 text-lg text-zinc-600 leading-relaxed">
               BReviewAI gives every customer a branded page with AI-written
@@ -221,7 +221,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-px sm:grid-cols-4 rounded-2xl border border-zinc-200 overflow-hidden">
               {stats.map((s) => (
                 <div key={s.value} className="bg-white px-6 py-8 text-center">
-                  <p className="text-3xl font-bold text-blue-600">{s.value}</p>
+                  <p className="text-3xl font-bold text-rose-600">{s.value}</p>
                   <p className="mt-1 text-sm text-zinc-500">{s.label}</p>
                 </div>
               ))}
@@ -233,7 +233,7 @@ export default function Home() {
         <section id="how-it-works" className="border-t border-zinc-200 bg-zinc-50">
           <div className="mx-auto max-w-6xl px-4 py-16">
             <div className="max-w-xl">
-              <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">How it works</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-rose-600">How it works</p>
               <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900">
                 From setup to your first review in 4 steps
               </h2>
@@ -245,7 +245,7 @@ export default function Home() {
             <div className="mt-12 grid gap-6 sm:grid-cols-2">
               {steps.map((s) => (
                 <div key={s.step} className="rounded-2xl border border-zinc-200 bg-white p-6">
-                  <span className="text-xs font-bold tracking-widest text-blue-600">STEP {s.step}</span>
+                  <span className="text-xs font-bold tracking-widest text-rose-600">STEP {s.step}</span>
                   <h3 className="mt-3 text-lg font-semibold text-zinc-900">{s.title}</h3>
                   <p className="mt-2 text-sm text-zinc-600 leading-relaxed">{s.body}</p>
                   <p className="mt-3 rounded-lg border border-zinc-100 bg-zinc-50 px-3 py-2 text-xs text-zinc-500">
@@ -262,7 +262,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-4 py-16">
             <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">Setup guide</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-rose-600">Setup guide</p>
                 <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900">
                   How to get your Google Review link
                 </h2>
@@ -273,7 +273,7 @@ export default function Home() {
                 <ol className="mt-6 space-y-3">
                   {howToGetReviewLink.map((item) => (
                     <li key={item.step} className="flex items-start gap-3">
-                      <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-blue-200 bg-blue-50 text-xs font-bold text-blue-700">
+                      <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-rose-200 bg-rose-50 text-xs font-bold text-rose-700">
                         {item.step}
                       </span>
                       <p className="text-sm text-zinc-600 leading-relaxed pt-0.5">{item.text}</p>
@@ -292,11 +292,11 @@ export default function Home() {
                 {/* Mock review page */}
                 <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
                   {/* Banner mock */}
-                  <div className="h-16 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-500 mb-4" />
+                  <div className="h-16 rounded-lg bg-gradient-to-r from-rose-500 to-red-500 mb-4" />
 
                   {/* Business info mock */}
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-sm">B</div>
+                    <div className="h-10 w-10 rounded-lg bg-rose-600 flex items-center justify-center text-white font-bold text-sm">B</div>
                     <div>
                       <div className="h-3 w-28 bg-zinc-200 rounded mb-1.5" />
                       <div className="h-2.5 w-20 bg-zinc-100 rounded" />
@@ -314,7 +314,7 @@ export default function Home() {
                   {/* Review options */}
                   <p className="text-xs font-medium text-zinc-700 mb-2">Pick a review you like</p>
                   <div className="space-y-2">
-                    <div className="rounded-lg border-2 border-blue-500 bg-blue-50 p-2.5 text-xs text-zinc-700 leading-relaxed">
+                    <div className="rounded-lg border-2 border-rose-500 bg-rose-50 p-2.5 text-xs text-zinc-700 leading-relaxed">
                       Absolutely love this place! The service was top-notch and the staff made me feel welcome. Will definitely be back! ⭐⭐⭐⭐⭐
                     </div>
                     <div className="rounded-lg border border-zinc-200 bg-white p-2.5 text-xs text-zinc-500 leading-relaxed">
@@ -323,7 +323,7 @@ export default function Home() {
                   </div>
 
                   {/* CTA */}
-                  <button className="mt-3 w-full rounded-lg bg-blue-600 py-2 text-xs font-semibold text-white">
+                  <button className="mt-3 w-full rounded-lg bg-rose-600 py-2 text-xs font-semibold text-white">
                     Copy &amp; Post on Google →
                   </button>
                 </div>
@@ -340,7 +340,7 @@ export default function Home() {
         <section className="border-t border-zinc-200 bg-zinc-50">
           <div className="mx-auto max-w-6xl px-4 py-16">
             <div className="max-w-xl">
-              <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">Features</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-rose-600">Features</p>
               <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900">
                 Everything you need to collect reviews at scale
               </h2>
@@ -362,14 +362,14 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-4 py-16">
             <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">Why it matters</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-rose-600">Why it matters</p>
                 <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900">
                   Reviews are the #1 factor in local search ranking
                 </h2>
                 <div className="mt-6 space-y-3">
                   {whyMatters.map((item) => (
                     <div key={item.stat} className="flex items-start gap-4 rounded-xl border border-zinc-200 bg-white px-4 py-4">
-                      <span className="text-xl font-bold text-blue-600 min-w-[3.5rem]">{item.stat}</span>
+                      <span className="text-xl font-bold text-rose-600 min-w-[3.5rem]">{item.stat}</span>
                       <p className="text-sm text-zinc-600 leading-relaxed">{item.text}</p>
                     </div>
                   ))}
@@ -402,7 +402,7 @@ export default function Home() {
         <section className="border-t border-zinc-200 bg-zinc-50">
           <div className="mx-auto max-w-6xl px-4 py-16">
             <div className="max-w-xl">
-              <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">Who it&apos;s for</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-rose-600">Who it&apos;s for</p>
               <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900">
                 Built for local &amp; service businesses
               </h2>
@@ -428,7 +428,7 @@ export default function Home() {
         <section className="border-t border-zinc-200">
           <div className="mx-auto max-w-6xl px-4 py-16">
             <div className="max-w-xl">
-              <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">FAQ</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-rose-600">FAQ</p>
               <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900">Common questions</h2>
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -445,7 +445,7 @@ export default function Home() {
         {/* ── CTA ──────────────────────────────────────────────────────── */}
         <section className="border-t border-zinc-200 bg-zinc-50">
           <div className="mx-auto max-w-6xl px-4 py-20 text-center">
-            <span className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+            <span className="inline-flex items-center rounded-full border border-rose-200 bg-rose-50 px-3 py-1 text-xs font-medium text-rose-700">
               Free to start — no credit card
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900">

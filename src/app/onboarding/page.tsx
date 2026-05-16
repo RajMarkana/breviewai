@@ -19,7 +19,7 @@ import Navbar from "@/components/Navbar";
 import type { Business } from "@/lib/types";
 
 const inputCls =
-  "w-full rounded-lg border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/15";
+  "w-full rounded-lg border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-rose-600 focus:ring-2 focus:ring-rose-600/15";
 
 export default function OnboardingPage() {
   const { user, loading } = useAuth();

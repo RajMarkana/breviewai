@@ -11,7 +11,7 @@ import QRCode from "qrcode";
 import type { Business } from "@/lib/types";
 
 const inputCls =
-  "w-full rounded-lg border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/15";
+  "w-full rounded-lg border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-rose-600 focus:ring-2 focus:ring-rose-600/15";
 
 export default function DashboardPage() {
   const { user, loading } = useAuth();
@@ -142,7 +142,7 @@ export default function DashboardPage() {
           <p className="text-red-600 mb-4">{error || "Business not found."}</p>
           <button
             onClick={() => window.location.reload()}
-            className="text-blue-600 hover:underline"
+            className="text-rose-600 hover:underline"
           >
             Retry
           </button>
@@ -246,7 +246,7 @@ export default function DashboardPage() {
                       href={biz.googleReviewUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="break-all text-blue-600 hover:underline"
+                      className="break-all text-rose-600 hover:underline"
                     >
                       {biz.googleReviewUrl}
                     </a>
@@ -411,7 +411,7 @@ export default function DashboardPage() {
                     <a
                       href={qrDataUrl || "#"}
                       download={`${biz.slug}-qr.png`}
-                      className="text-sm font-medium text-blue-600 hover:underline"
+                      className="text-sm font-medium text-rose-600 hover:underline"
                     >
                       Download QR
                     </a>

@@ -18,7 +18,7 @@ export default function Navbar() {
     <header className="border-b border-zinc-200 bg-white/80 backdrop-blur sticky top-0 z-20">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center gap-2">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white font-bold">
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-rose-600 text-white font-bold">
             B
           </span>
           <span className="text-lg font-semibold tracking-tight">BReviewAI</span>

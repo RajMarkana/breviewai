@@ -204,7 +204,7 @@ function ReviewPageContent({ slug }: { slug: string }) {
       <div className="mx-auto max-w-2xl">
 
         {/* Banner */}
-        <div className="relative overflow-hidden rounded-2xl border border-zinc-200 bg-gradient-to-r from-blue-600 to-indigo-600 sm:h-48">
+        <div className="relative overflow-hidden rounded-2xl border border-zinc-200 bg-gradient-to-r from-rose-600 to-indigo-600 sm:h-48">
           {biz.bannerUrl && (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={biz.bannerUrl} alt="" className="absolute inset-0 h-full w-full object-cover" />
@@ -224,7 +224,7 @@ function ReviewPageContent({ slug }: { slug: string }) {
                   className="h-16 w-16 rounded-xl border border-zinc-200 object-cover"
                 />
               ) : (
-                <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-blue-600 text-2xl font-bold text-white">
+                <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-rose-600 text-2xl font-bold text-white">
                   {biz.name.charAt(0).toUpperCase()}
                 </div>
               )}
@@ -359,12 +359,12 @@ function ReviewPageContent({ slug }: { slug: string }) {
                           className={
                             "block w-full rounded-xl border p-4 text-left text-sm leading-relaxed transition " +
                             (isSelected
-                              ? "border-blue-600 bg-blue-50 ring-2 ring-blue-600/30"
+                              ? "border-rose-600 bg-rose-50 ring-2 ring-rose-600/30"
                               : "border-zinc-200 bg-white hover:border-zinc-300 hover:bg-zinc-50")
                           }
                         >
                           {isSelected && (
-                            <span className="mb-2 flex items-center gap-1 text-xs font-semibold text-blue-600">
+                            <span className="mb-2 flex items-center gap-1 text-xs font-semibold text-rose-600">
                               <CheckIcon /> Selected
                             </span>
                           )}
@@ -476,19 +476,19 @@ function CopiedScreen({
       {/* Instruction steps */}
       <ol className="mt-5 space-y-2 text-sm text-zinc-600">
         <li className="flex items-start gap-2">
-          <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">1</span>
+          <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-rose-600 text-xs font-bold text-white">1</span>
           <span>Click <strong>Open Google Reviews</strong> below.</span>
         </li>
         <li className="flex items-start gap-2">
-          <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">2</span>
+          <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-rose-600 text-xs font-bold text-white">2</span>
           <span>Select the number of stars you want to give.</span>
         </li>
         <li className="flex items-start gap-2">
-          <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">3</span>
+          <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-rose-600 text-xs font-bold text-white">3</span>
           <span>Tap the text box and <strong>paste</strong> (Ctrl+V / ⌘V / long-press → Paste).</span>
         </li>
         <li className="flex items-start gap-2">
-          <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">4</span>
+          <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-rose-600 text-xs font-bold text-white">4</span>
           <span>Hit <strong>Post</strong> — you&apos;re done! 🎉</span>
         </li>
       </ol>
